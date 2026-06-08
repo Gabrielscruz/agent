@@ -1,0 +1,44 @@
+<svg width="360" height="620" viewBox="0 0 360 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bodyGlow" cx="50%" cy="38%" r="60%">
+      <stop stop-color="#E9FDFF" stop-opacity="0.9"/>
+      <stop offset="0.35" stop-color="#7CF7FF" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#0BD7FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#E9FDFF" stop-opacity="0.65"/>
+      <stop offset="0.18" stop-color="#7AF7FF" stop-opacity="0.22"/>
+      <stop offset="0.19" stop-color="#0BD7FF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0BD7FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-80" y="-80" width="520" height="780" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.2 0 0 0 0 0.95 0 0 0 0 1 0 0 0 0.75 0"/>
+      <feBlend in="SourceGraphic"/>
+    </filter>
+    <pattern id="scanlines" width="1" height="12" patternUnits="userSpaceOnUse">
+      <rect width="1" height="3" fill="#B9FBFF" fill-opacity="0.22"/>
+    </pattern>
+  </defs>
+  <ellipse cx="180" cy="574" rx="118" ry="34" stroke="#62F5FF" stroke-opacity="0.8" stroke-width="3"/>
+  <ellipse cx="180" cy="574" rx="78" ry="19" fill="#45F4FF" fill-opacity="0.22"/>
+  <g filter="url(#glow)" opacity="0.92">
+    <path d="M186 46C229 48 246 89 232 126C222 153 196 166 169 158C136 148 122 120 132 88C140 60 160 45 186 46Z" fill="url(#bodyGlow)" stroke="#A7FAFF" stroke-width="2"/>
+    <path d="M156 154H206L216 194L194 213H165L144 193L156 154Z" fill="url(#bodyGlow)" stroke="#A7FAFF" stroke-width="2"/>
+    <path d="M128 202C143 178 216 176 233 203C251 234 248 304 224 348C206 382 155 380 136 348C111 306 108 234 128 202Z" fill="url(#bodyGlow)" stroke="#A7FAFF" stroke-width="2"/>
+    <path d="M117 216C84 251 74 322 94 386C103 415 124 410 126 379C130 323 142 260 158 222L117 216Z" fill="url(#bodyGlow)" stroke="#A7FAFF" stroke-width="2"/>
+    <path d="M239 216C274 255 285 320 267 382C258 413 236 409 233 378C228 320 215 262 199 222L239 216Z" fill="url(#bodyGlow)" stroke="#A7FAFF" stroke-width="2"/>
+    <path d="M148 354C123 402 114 474 123 545C127 577 155 575 160 544L181 374L148 354Z" fill="url(#bodyGlow)" stroke="#A7FAFF" stroke-width="2"/>
+    <path d="M209 354C236 405 245 475 235 545C230 577 202 575 197 544L176 374L209 354Z" fill="url(#bodyGlow)" stroke="#A7FAFF" stroke-width="2"/>
+  </g>
+  <g opacity="0.72">
+    <path d="M112 96C169 72 212 87 248 132" stroke="#D8FEFF" stroke-opacity="0.45" stroke-width="2"/>
+    <path d="M112 244C155 229 205 230 248 248" stroke="#D8FEFF" stroke-opacity="0.45" stroke-width="2"/>
+    <path d="M120 310C160 329 204 329 243 310" stroke="#D8FEFF" stroke-opacity="0.45" stroke-width="2"/>
+    <path d="M139 400C169 415 197 415 225 400" stroke="#D8FEFF" stroke-opacity="0.45" stroke-width="2"/>
+  </g>
+  <rect x="64" y="28" width="232" height="526" fill="url(#scanlines)" opacity="0.52"/>
+  <rect x="54" y="34" width="250" height="420" fill="url(#scan)" opacity="0.34">
+    <animate attributeName="y" from="20" to="530" dur="4s" repeatCount="indefinite"/>
+  </rect>
+</svg>
